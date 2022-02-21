@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:500");
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:700");
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');  /* for footer */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Pacifico&display=swap');
+:root {
+  --gray-4: #c5c4c4;
+  --gray-6: #757575;
+  --gray-7: #212121;
+  --white: #ffffff;
+  --viridian: #008294;
+  --black: #131010;
+}
+
+body {
+  /* font-family: "Stylish";
+  font-size: 18px;
+  background-color: white; */
+
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.45;
+  font-weight: 400;
+
+}
+
+header {
+  background-color: #eeeeee;
+}
+
+li,
+a {
+  font-family: "Montserrate", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: #232020;
+  text-decoration: none;
+}
+
+form {
+  display: block;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+input {
+  color: var(--gray-7);
+}
+
+input::-webkit-input-placeholder {
+  color: var(--gray-4);
+  font-style: normal;
+}
+
+div {
+  display: block;
+}
+
+a {
+  display: inline;
+}
+
+a,
+span {
+  display: inline;
+}
+
+ul {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+  display: block;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+}
+
+/* =======================Header of the Page================================== */
+
+.group-header {
+  background-color: #343A40;   /* background of the header */
+  margin-bottom: 50px;
+}
+
+.logo-image {
+  cursor: pointer;
+ 
+  height: 45px;
+  width: 1fr;
+   border-radius: 10px;
+}
+
+.fsearch-bar{
+  box-sizing: border-box;
+  margin: 0px;
+  min-width: 0px;
+  appearance: none;
+  font-size: 16px;
+  border: 1px solid rgb(217, 217, 217);
+  color: inherit;
+  padding: 8px 8px 8px 16px;
+  line-height: 26px;
+  background-color: var(--white);
+  border-radius: 8px 0px 0px 8px;
+  width: inherit;
+  display: inline-flex;
+}
+
+.fsearch-bar:hover {
+  border-color: var(--gray-6);
+}
+.fsearch-bar:focus {
+  border-color:  var(--viridian);
+  outline: none;
+}
+
+.fsearch-bar::-webkit-input-placeholder {
+  color: rgb(162, 162, 162);
+}
+
+.fsearch-bar::placeholder {
+  color: rgb(162, 162, 162);
+}
+.fsearch-bar:hover {
+  z-index: 10;
+}
+
+.fsearch-bar:focus {
+  z-index: 10;
+}
+
+.flocation-search-bar {
+
+    appearance: none;
+ 
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(217, 217, 217);
+    border-radius: 0px 8px 8px 0px;
+    box-sizing: border-box;
+    color: rgb(33, 33, 33);
+    font-size: 16px;
+    padding: 8px 16px;
+}
+
+.flocation-search-bar:hover {
+  border-color: rgb(117, 117, 117);
+  outline: none;
+}
+.flocation-search-bar:focus {
+  border-color: rgb(0, 130, 148);
+  outline: none;
+  position: relative;
+}
+.flocation-search-bar::-webkit-input-placeholder {
+  color: rgb(162, 162, 162);
+}
+.flocation-search-bar::placeholder {
+  color: rgb(162, 162, 162);
+}
+
+
+.navbar-toggler {
+  right: 15px;
+  position: right;
+  width: 47px;
+  height: 34px;
+  background-color: #fff;
+  
+}
+
+.navbar-toggler .line {
+  width: 100%;
+  float: left;
+  height: 2px;
+  background-color: #343A40;
+  margin-bottom: 5px;
+}
+
+.nav-links {
+  list-style: none;
+  
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3 ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #008ba9;
+}
+
+button:focus {
+  outline: 0;
+}
+
+.collapse-btn {
+  cursor: pointer;
+  transition: all 0.3 ease 0s;
+}
+
+button:hover {
+  outline: black;
+  background-color: rgba(rgb(110, 101, 101), green, blue, alpha);
+}
+
+.mx-auto {
+  margin-right: 0 !important;
+}
+.navbar-expand-md .navbar-collapse {         
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;  
+}
+
+#new-group:hover{
+  color: wheat;
+}
+
+@media screen and (max-width: 600px) { 
+  .link-image{
+  padding-right: 9rem;
+  }
+  .search-bars{
+   
+  }
+ 
+}
+
+/* #navbarSupportedContent{
+  justify-content: end;
+} */
+
+ /* ===================CSS FOR TTHE CONTENT OF THE PAGE ==========================*/
+
+
+.group-img {
+  border-radius: 10px;
+  background-color: grey;
+  width: 222px;
+  height: 122px;
+  display: inline-block;
+  vertical-align: top;
+  margin: 20px 30px 0 0;
+}
+
+.group-img:hover{
+  transform: scale(1.1);
+  transition: ease 0.4s;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 20px 30px;
+}
+.group-txt {
+  display: inline-block;
+  width: 46%;
+}
+@media (max-width: 620px) {
+  .group-txt {
+    width: 100%;
+  }
+}
+
+/*============================ CSS FOR THE FOOTER OF THE PAGE =====================================*/
+
+section {
+  padding: 5px 0;
+}
+
+section .section-title {
+  text-align: center;
+  color: #007b5e;
+  margin-bottom: 50px;
+  text-transform: uppercase;
+}
+#footer {
+  background: #202020 !important;
+}
+
+.Upper-footer{
+color: white;
+}
+
+#footerbtn
+{
+padding: 10px;
+margin-left: 10px;
+border-radius:10px;
+background-color:#202020;
+color:white;
+border: 1px solid white;
+}
+
+.footer-line{
+background-color: white;
+}
+
+#footer h5{
+padding-left: 10%;
+  /* border-left: 3px solid #eeeeee; */
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+  color:#ffffff;
+}
+#footer a {
+  color: #ffffff;
+  text-decoration: none !important;
+  background-color: transparent;
+
+}
+#footer ul.social li{
+padding: 3px 0;
+}
+#footer ul.social li a i {
+  margin-right: 5px;
+font-size:25px;
+-webkit-transition: .5s all ease;
+-moz-transition: .5s all ease;
+transition: .5s all ease;
+}
+#footer ul.social li:hover a i {
+transform: rotate(360deg);
+font-size:30px;
+margin-top:-10px;
+}
+#footer ul.social li a,
+#footer ul.quick-links li a{
+color:#ffffff;
+}
+#footer ul.social li a:hover{
+color:#eeeeee;
+}
+#footer ul.quick-links li{
+padding: 3px 0 3px 10%;
+-webkit-transition: .5s all ease;
+-moz-transition: .5s all ease;
+transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+padding: 3px 0;
+margin-left:5px;
+font-weight:700;
+}
+#footer ul.quick-links li a i{
+margin-right: 5px;
+}
+#footer ul.quick-links li:hover a i {
+  font-weight: 700;
+}
+
+@media (max-width:767px){
+#footer h5 {
+  padding-left: 0;
+  border-left: transparent;
+  padding-bottom: 0px;
+  margin-bottom: 10px;
+}
+#footer ul.quick-links li{
+padding-left: 0;
+}
+}
